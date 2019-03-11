@@ -1,99 +1,71 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-        <link rel="stylesheet" href="assets/custom.css">
-        <script src="assets/css/bootstrap.min.js"></script>
+        <meta charset="utf-8" />
+        <meta name="author" content="Technaplex" />
+        <title>Technaplex | Home</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <!--CSS styles -->
+        <link href="assets/custom.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
+        <!-- JavaScript -->
+        <script src="assets/js/jquery-3.3.1.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script>
+            function submitInfo() {
+                alert("Thank you for your interest!");
+            }
+        </script>
+        
         <!-- Global Site Tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=GA_TRACKING_ID"></script>
         <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'UA-135271107-1');
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-135271107-1');
         </script>
     </head>
     <body>
-        
-        <!-- Navigation -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-          <div class="container">
-            <a class="navbar-brand" href="#">Technaplex</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Home
-                        <span class="sr-only">(current)</span>
-                      </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Services</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Contact</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
+        <header id="site-header">
+            <div class="site-header-toprow">
+                <a class="site-logo" href="index.html">Technaplex</a>
 
-        <header>
-          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner" role="listbox">
-              <!-- Slide One - Set the background image for this slide in the line below -->
-              <div class="carousel-item active" style="background-image: url('https://source.unsplash.com/LAaSoL0LrYs/1920x1080')">
-                <div class="carousel-caption d-none d-md-block">
-                  <h2 class="display-4">First Slide</h2>
-                  <p class="lead">This is a description for the first slide.</p>
-                </div>
-              </div>
-              <!-- Slide Two - Set the background image for this slide in the line below -->
-              <div class="carousel-item" style="background-image: url('https://source.unsplash.com/bF2vsubyHcQ/1920x1080')">
-                <div class="carousel-caption d-none d-md-block">
-                  <h2 class="display-4">Second Slide</h2>
-                  <p class="lead">This is a description for the second slide.</p>
-                </div>
-              </div>
-              <!-- Slide Three - Set the background image for this slide in the line below -->
-              <div class="carousel-item" style="background-image: url('https://source.unsplash.com/szFUQoyvrxM/1920x1080')">
-                <div class="carousel-caption d-none d-md-block">
-                  <h2 class="display-4">Third Slide</h2>
-                  <p class="lead">This is a description for the third slide.</p>
-                </div>
-              </div>
+                <nav id="site-nav">
+                    <a href="#" class="menu-icon"><i class="fas fa-bars"></i></a>
+                    <div class="site-nav-wrapper">
+                        <a href="#" class="active">Home</a>
+                        <a href="#">QuizDB Mobile</a>
+                        <a href="#">Tak</a>
+                        <a href="#">Contact Us</a>
+                    </div>
+                </nav>
+
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
-                </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
-                </a>
-          </div>
         </header>
 
-        <!-- Page Content -->
-        <section class="py-5">
-          <div class="container">
-            <h1 class="display-4">Full Page Image Slider</h1>
-            <p class="lead">The background images for the slider are set directly in the HTML using inline CSS. The images in this snippet are from <a href="https://unsplash.com">Unsplash</a>, taken by <a href="https://unsplash.com/@joannakosinska">Joanna Kosinska</a>!</p>
-          </div>
-        </section>
-        
+        <div class="section" id="intro">
+            <h2>Contact Us</h2>
+            <div>
+                <form id ="contact-form" action="">
+                    <label for="fname">First Name</label><br>
+                    <input type="text" id="fname" name="firstname" placeholder="Eg. John"><br>
+
+                    <label for="lname">Last Name</label><br>
+                    <input type="text" id="lname" name="lastname" placeholder="Eg. Smith"><br>
+
+                    <label for="email">Email</label><br>
+                    <input type="text" id="email" name="email" placeholder="Eg. johnsmith@gmail.com"><br>
+
+                    <label for="questions">Questions</label><br>
+                    <textarea id="subject" name="questions" placeholder="What would you like to ask us?" style="height:200px"></textarea><br>
+
+                    <input type="submit" onclick="submitInfo()" value="Submit">
+                </form>
+            </div>
+        </div>
     </body>
 </html>
 
-        
