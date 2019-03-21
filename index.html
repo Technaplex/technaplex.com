@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <meta name="author" content="Technaplex" />
-        <title>Technaplex | Home</title>
+        <title>Beartooth | Home</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <!--CSS styles -->
         <link href="assets/custom.css" rel="stylesheet" />
@@ -61,7 +61,26 @@
 
                     <label for="questions">Questions</label><br>
                     <textarea id="subject" name="questions" placeholder="What would you like to ask us?" style="height:200px"></textarea><br>
-
+                    
+                    <label for="hike">Select Your Hike</label><br>
+                    <input type="radio" name="hike" value="easy">Hellroaring Platau (Easy)<br>
+                    <input type="radio" name="hike" value="int">Gardiner Lake (Intermediate)<br>
+                    <input type="radio" name="hike" value="adv">Beaten Path (Advanced)<br>
+                    
+                    <label for="email">Number of Hikers</label><br>
+                    <input type="number" id="numHikers" name="numHikers" placeholder="Eg. 2"><br>
+                    
+                    <label for="hike">Select Duration</label><br>
+                    <input type="radio" name="duration" value="2">2 Days<br>
+                    <input type="radio" name="duration" value="3">3 Days<br>
+                    <input type="radio" name="duration" value="4">4 Days<br>
+                    <input type="radio" name="duration" value="5">5 Days<br>
+                    <input type="radio" name="duration" value="7">7 Days<br>
+                    
+                    
+                    <label for="hike">Select The Dates</label><br>
+                    <input type="date" id="start" name="trip-start" value="2019-03-21" min="2019-03-21"><br>
+                    <br>
                     <input type="submit" onclick="submitInfo()" value="Submit">
                 </form>
             </div>
