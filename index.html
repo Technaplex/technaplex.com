@@ -8,16 +8,12 @@
         <!--CSS styles -->
         <link href="assets/custom.css" rel="stylesheet" />
         <link href="assets/css/bootstrap-grid.css" rel="stylesheet" />
+        <link href="assets/card.css" rel="stylesheet" />
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
         <!-- JavaScript -->
         <script src="assets/js/jquery-3.3.1.js"></script>
-        <script src="assets/js/main.js"></script>
-        <script>
-            function submitInfo() {
                 alert("Thank you for your interest!");
-            }
-        </script>
         
         <!-- Global Site Tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=GA_TRACKING_ID"></script>
@@ -45,25 +41,37 @@
             </div>
         </header>
         
-        <div id="intro" class="container section">
-        	<div class="cards">
- 	   			<div class="card">
-    	  				<h4 class="card-title">Card title</h4>
-      					<p class="card-text">Some example text. Some example text.</p>
-      					<a href="#" class="card-link">Card link</a>
-    			</div>
-    			<div class="card">
-    	  			<h4 class="card-title">Card title</h4>
-     	 			<p class="card-text">Some example text. Some example text.</p>
-      				<a href="#" class="card-link">Card link</a>
-    			</div>
-   				<div class="card">
-    	 			<h4 class="card-title">Card title</h4>
-    				<p class="card-text">Some example text. Some example text.</p>
-    	  			<a href="#" class="card-link">Card link</a>
-    			</div>
-  			</div>
+        <div id="appcards" class="container section">
+        	<div class="row">
+                <div id="qc" class="blog-card spring-fever col-lg-3">
+                    <div class="title-content">
+                        <h3>QuizDB Mobile</h3>
+                        <hr />
+                        <div id="qci" class="intro-card">Offline Searchable Quizbowl Database</div>
+                    </div>
+                    <div class="card-info">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+                    </div>
+                    <div class="gradient-overlay"></div>
+                    <div class="color-overlay"></div>
+                </div>
+                <div class="card-spacer"></div>
+                <div id="tc" class="blog-card spring-fever col-lg-3">
+                    <div class="title-content">
+                        <h3>Tak</h3>
+                        <hr />
+                        <div id="tci" class="intro-card">A 3-Dimensional Strategy game by Patrick Rothfuss</div>
+                    </div>
+                    <div class="card-info">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+                    </div>
+                    <div class="gradient-overlay"></div>
+                    <div class="color-overlay"></div>
+                </div>
+            </div>
   		</div>
+
+        <script src="assets/js/main.js"></script>
     </body>
 </html>
 

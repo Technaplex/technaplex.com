@@ -2,12 +2,9 @@
 // Compile with sass assets/card.scss assets/card.css
 // Alternatively, keep this running: sass --watch assets/ assets/
 
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700);
-@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic);
-
 // variables
 $card-width:  350px;
-$card-height: 500px;
+$card-height: 400px;
 $h-color:     #9CC9E3;
 $yellow:      #D0BB57;
 $txt-color:   #DCE3E7;
@@ -18,17 +15,13 @@ $txt-color:   #DCE3E7;
   padding: 0;
 }
 
-body{
-  background: #323c41;
-}
-
 .blog-card{
   width: $card-width;
   height: $card-height;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin: -250px 0 0 -175px;
+  //position: absolute;
+  //top: 50%;
+  //left: 50%;
+  //margin: -250px 0 0 -175px;
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 3px 3px 20px rgba(0, 0, 0, .5);
@@ -99,7 +92,7 @@ hr{
   border: 0;
   background: $yellow;
 }
-.intro{
+.intro-card{
   width: 170px;
   margin: 0 auto;
   color: $txt-color;
@@ -125,7 +118,7 @@ hr{
 }
 
 .utility-info{
-  position: absolute; s
+  position: absolute;
   bottom: 0px;
   left: 0;
   z-index: 20;

@@ -6,3 +6,5 @@
 .idea/workspace.xml
 assets/.DS_Store
 .DS_Store
+.sass-cache/b1911be724f0859a54a5280455e22cadcfc8784d/card.scssc
+node_modules/
