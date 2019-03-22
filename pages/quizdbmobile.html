@@ -6,13 +6,13 @@
         <title>Technaplex | Home</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <!--CSS styles -->
-        <link href="assets/custom.css" rel="stylesheet" />
-        <link href="assets/css/bootstrap-grid.css" rel="stylesheet" />
+        <link href="../assets/custom.css" rel="stylesheet" />
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
         <!-- JavaScript -->
-        <script src="assets/js/jquery-3.3.1.js"></script>
-        <script src="assets/js/main.js"></script>
+        <script src="../assets/js/jquery-3.3.1.js"></script>
+        <script src="../assets/js/main.js"></script>
         <script>
             function submitInfo() {
                 alert("Thank you for your interest!");
@@ -36,34 +36,36 @@
                 <nav id="site-nav">
                     <a href="#" class="menu-icon"><i class="fas fa-bars"></i></a>
                     <div class="site-nav-wrapper">
-                        <a href="#" class="active">Home</a>
-                        <a href="pages/quizdbmobile.html">QuizDB Mobile</a>
-                        <a href="pages/tak.html">Tak</a>
-                        <a href="pages/contact.html">Contact Us</a>
+                        <a href="../index.html">Home</a>
+                        <a href="#"  class="active">QuizDB Mobile</a>
+                        <a href="tak.html">Tak</a>
+                        <a href="contact.html">Contact Us</a>
                     </div>
                 </nav>
+
             </div>
         </header>
-        
-        <div id="intro" class="container section">
-        	<div class="cards">
- 	   			<div class="card">
-    	  				<h4 class="card-title">Card title</h4>
-      					<p class="card-text">Some example text. Some example text.</p>
-      					<a href="#" class="card-link">Card link</a>
-    			</div>
-    			<div class="card">
-    	  			<h4 class="card-title">Card title</h4>
-     	 			<p class="card-text">Some example text. Some example text.</p>
-      				<a href="#" class="card-link">Card link</a>
-    			</div>
-   				<div class="card">
-    	 			<h4 class="card-title">Card title</h4>
-    				<p class="card-text">Some example text. Some example text.</p>
-    	  			<a href="#" class="card-link">Card link</a>
-    			</div>
-  			</div>
-  		</div>
+
+        <div class="section" id="intro">
+            <h2>Contact Us</h2>
+            <div>
+                <form id ="contact-form" action="">
+                    <label for="fname">First Name</label><br>
+                    <input type="text" id="fname" name="firstname" placeholder="Eg. John"><br>
+
+                    <label for="lname">Last Name</label><br>
+                    <input type="text" id="lname" name="lastname" placeholder="Eg. Smith"><br>
+
+                    <label for="email">Email</label><br>
+                    <input type="text" id="email" name="email" placeholder="Eg. johnsmith@gmail.com"><br>
+
+                    <label for="questions">Questions</label><br>
+                    <textarea id="subject" name="questions" placeholder="What would you like to ask us?" style="height:200px"></textarea><br>
+
+                    <input type="submit" onclick="submitInfo()" value="Submit">
+                </form>
+            </div>
+        </div>
     </body>
 </html>
 
