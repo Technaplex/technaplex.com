@@ -7,7 +7,7 @@ body{
 }
 
 .section {
-    
+    z-index: 1;
 }
 
 input[type=text], select, textarea {
@@ -61,12 +61,14 @@ input[type=submit]:hover {
     text-align:center;
     font-weight:400;
     font-family: 'Nunito', sans-serif;
+    z-index: 10;
 }
 #site-header .site-header-toprow{
     padding:10px 10px 0;
-    height:40px;
+    height:50px;
     box-shadow:0 2px rgba(0,0,0,0.05);
     position:relative;
+    box-sizing: border-box;
 }
 #site-header .site-header-toprow .site-logo{
     position:absolute;
@@ -119,7 +121,7 @@ input[type=submit]:hover {
     clear:both;
 }
 
-@media (max-width:800px){
+@media (max-width:700px){
     #site-header .site-header-toprow{
         text-align:right;
     }
@@ -171,7 +173,7 @@ input[type=submit]:hover {
         display:block;
     }
 }
-@media (min-width:800px){
+@media (min-width:700px){
     #site-header #site-nav .menu-icon{
         display:none;
     }
