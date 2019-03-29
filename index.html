@@ -1,70 +1,103 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="author" content="Technaplex" />
-        <title>Technaplex | Home</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-        <!-- CSS styles -->
-        <link href="assets/css/bootstrap-grid.css" rel="stylesheet" />
-        <link href="assets/card.css" rel="stylesheet" />
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-        <link href="assets/custom.css" rel="stylesheet" />
-        
-        <!-- Javascript -->
-        <script src="assets/js/main.js"></script>
-        <script src="assets/js/jquery-3.3.1.js"></script>
-        <script type="text/javascript">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Technaplex" />
+    <title>Technaplex | Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- CSS styles -->
+    <link href="assets/css/bootstrap-grid.css" rel="stylesheet" />
+    <link href="assets/card.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link href="assets/custom.css" rel="stylesheet" />
+
+    <!-- Javascript -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
         //scroll to top of page
-            window.onbeforeunload = function () {
-                window.scrollTo(0, 0);
-            }
+        window.onbeforeunload = function() {
+            window.scrollTo(0, 0);
+        }
         //arrow click
-            $(document).ready( function () {
-                $('#down').on('click',function () {
-                    $("html").scrollTop(0);
-                    $('html, body').animate({
-                        scrollTop: $(".main").offset().top
-                    }, 1000);
-                });
+        $(document).ready(function() {
+            $('#down').on('click', function() {
+                $("html").scrollTop(0);
+                $('html, body').animate({
+                    scrollTop: $(".main").offset().top
+                }, 1000);
             });
-        </script>
-        <!-- Global Site Tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=GA_TRACKING_ID"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'UA-135271107-1');
-        </script>
-    </head>
-    <body>
-        <div id="splash">
-            <h1>Welcome to Technaplex</h1>
-            <p>Tomorrow's technology today</p>
-            <span id="down">&#8595;</span>
+        });
+    </script>
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_TRACKING_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-135271107-1');
+    </script>
+</head>
+
+<body>
+    <header id="splash">
+        <h1>Welcome to Technaplex</h1>
+        <p>Tomorrow's technology today</p>
+        <span id="down">&#8595;</span>
+    </header>
+
+    <nav id="site-header">
+        <div class="site-header-toprow">
+            <a class="site-logo" href="index.html">Technaplex</a>
+
+            <nav id="site-nav">
+                <a href="#" class="menu-icon"><i class="fas fa-bars"></i></a>
+                <div class="site-nav-wrapper">
+                    <a href="#" class="active">Home</a>
+                    <a href="pages/quizdbmobile.html">QuizDB Mobile</a>
+                    <a href="pages/tak.html">Tak</a>
+                    <a href="pages/contact.html">Contact Us</a>
+                </div>
+            </nav>
         </div>
+    </nav>
 
-        <header id="site-header">
-            <div class="site-header-toprow">
-                <a class="site-logo" href="index.html">Technaplex</a>
+    <div id="body" class="main">
 
-                <nav id="site-nav">
-                    <a href="#" class="menu-icon"><i class="fas fa-bars"></i></a>
-                    <div class="site-nav-wrapper">
-                        <a href="#" class="active">Home</a>
-                        <a href="pages/quizdbmobile.html">QuizDB Mobile</a>
-                        <a href="pages/tak.html">Tak</a>
-                        <a href="pages/contact.html">Contact Us</a>
+        <section>
+            <div class="container">
+                <div class="row subheading">
+                    <h2 class="section-header text-center">Our Apps</h2>
+                </div>
+
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <img src="/assets/quizdb.png" alt="QuizDB" height="150" width="150">
+                        <h4 class="service-heading">QuizDB</h4>
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
                     </div>
-                </nav>
+                    <div class="col-md-4">
+                        <img src="/assets/quizdb.png" alt="QuizDB" height="150" width="150">
+                        <h4 class="service-heading">QuizDB</h4>
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="/assets/quizdb.png" alt="Saga Reader" height="150" width="150">
+                        <h4 class="service-heading">Saga Reader</h4>
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    </div>
+                </div>
             </div>
-        </header>
-        
-        <div id="body" class="main">
-            <div id="appcards" class="container section">
-        	<div class="row">
+
+        </section>
+
+        <div id="appcards" class="container section">
+            <div class="row">
                 <div id="qc" class="blog-card spring-fever col-lg-3">
                     <div class="title-content">
                         <h3>QuizDB Mobile</h3>
@@ -91,10 +124,8 @@
                     <div class="color-overlay"></div>
                 </div>
             </div>
-  		</div>
         </div>
-        
-        
-    </body>
-</html>
+    </div>
 
+
+</body></html>
