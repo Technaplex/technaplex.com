@@ -50,6 +50,35 @@ input[type=submit]:hover {
     margin: 50px auto 0;
 }
 
+#splash
+{
+    height: 100vh;
+    background-image: url(whitebg.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    margin: 0px;
+    margin-bottom: 30px;
+    padding: 0px;
+    font-family: monospace;
+}
+
+#down
+{
+ position: absolute;
+ top:85vh;
+ padding: 20px;
+ font-size: 2.5em;
+}
+#down:hover
+{
+ cursor: pointer;
+ background-color: #eee;
+ opacity: 0.8;
+}
+
 #site-header{
     background-color:white;
     position:fixed;
