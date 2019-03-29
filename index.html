@@ -26,7 +26,7 @@
             $('#down').on('click', function() {
                 $("html").scrollTop(0);
                 $('html, body').animate({
-                    scrollTop: $(".main").offset().top
+                    scrollTop: $(".main").offset(10).top
                 }, 1000);
             });
         });
@@ -71,23 +71,23 @@
 
         <section>
             <div class="container">
-                <div class="row subheading">
+                <div class="row subheading text-center">
                     <h2 class="section-header text-center">Our Apps</h2>
                 </div>
 
                 <div class="row text-center">
                     <div class="col-md-4">
-                        <img src="/assets/quizdb.png" alt="QuizDB" height="150" width="150">
-                        <h4 class="service-heading">QuizDB</h4>
+                        <img src="/assets/quizdb.png" alt="QuizDB for iOS" height="150" width="150">
+                        <h4 class="service-heading text-center">QuizDB</h4>
+                        <p class="text-muted text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="/assets/tak.png" alt="Tak for iOS" height="150" width="150">
+                        <h4 class="service-heading">Tak</h4>
                         <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
                     </div>
                     <div class="col-md-4">
-                        <img src="/assets/quizdb.png" alt="QuizDB" height="150" width="150">
-                        <h4 class="service-heading">QuizDB</h4>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-                    </div>
-                    <div class="col-md-4">
-                        <img src="/assets/quizdb.png" alt="Saga Reader" height="150" width="150">
+                        <img src="/assets/question_mark.jpg" alt="Saga Reader" height="150" width="150">
                         <h4 class="service-heading">Saga Reader</h4>
                         <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
                     </div>
