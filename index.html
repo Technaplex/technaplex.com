@@ -26,7 +26,7 @@
             $('#down').on('click', function() {
                 $("html").scrollTop(0);
                 $('html, body').animate({
-                    scrollTop: $(".main").offset(10).top
+                    scrollTop: $(".main").offset().top
                 }, 1000);
             });
         });
