@@ -1,72 +1,79 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="author" content="Technaplex" />
-        <title>Technaplex | Home</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-        <!--CSS styles -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-        <link href="../assets/custom.css" rel="stylesheet" />
 
-        <!-- JavaScript -->
-        <script src="../assets/js/jquery-3.3.1.js"></script>
-        <script src="../assets/js/main.js"></script>
-        <script>
-            function submitInfo() {
-                alert("Thank you for your interest!");
-            }
-        </script>
-        
-        <!-- Global Site Tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=GA_TRACKING_ID"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'UA-135271107-1');
-        </script>
-    </head>
-    <body>
-        <header id="site-header">
-            <div class="site-header-toprow">
-                <a class="site-logo" href="index.html">Technaplex</a>
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Technaplex" />
+    <title>Technaplex | Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!--CSS styles -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link href="../assets/custom.css" rel="stylesheet" />
 
-                <nav id="site-nav">
-                    <a href="#" class="menu-icon"><i class="fas fa-bars"></i></a>
-                    <div class="site-nav-wrapper">
-                        <a href="../index.html">Home</a>
-                        <a href="quizdbmobile.html">QuizDB Mobile</a>
-                        <a href="tak.html">Tak</a>
-                        <a href="#" class="active">Contact Us</a>
-                    </div>
-                </nav>
+    <!-- JavaScript -->
+    <script src="../assets/js/jquery-3.3.1.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script>
+        function submitInfo() {
+            alert("Thank you for your interest!");
+        }
 
-            </div>
-        </header>
+    </script>
 
-        <div class="section" id="intro">
-            <h2>Contact Us</h2>
-            <p>Do you have any comments, enquiries, and/or questions? <br>  We'd love to hear from you!</p>
-            <div>
-                <form id ="contact-form" action="">
-                    <label for="fname">First Name</label><br>
-                    <input type="text" id="fname" name="firstname" placeholder="Eg. John"><br>
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_TRACKING_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-                    <label for="lname">Last Name</label><br>
-                    <input type="text" id="lname" name="lastname" placeholder="Eg. Smith"><br>
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-135271107-1');
 
-                    <label for="email">Email</label><br>
-                    <input type="text" id="email" name="email" placeholder="Eg. johnsmith@gmail.com"><br>
+    </script>
+</head>
 
-                    <label for="questions"></label>Questions and Comments<br>
-                    <textarea id="subject" name="questions" placeholder="What would you like to ask us?" style="height:200px"></textarea><br>
+<body>
+    <header id="site-header">
+        <div class="site-header-toprow">
+            <a class="site-logo" href="index.html">Technaplex</a>
 
-                    <input type="submit" onclick="submitInfo()" value="Submit">
-                </form>
-            </div>
+            <nav id="site-nav">
+                <a href="#" class="menu-icon"><i class="fas fa-bars"></i></a>
+                <div class="site-nav-wrapper">
+                    <a href="../index.html">Home</a>
+                    <a href="quizdbmobile.html">QuizDB Mobile</a>
+                    <a href="tak.html">Tak</a>
+                    <a href="#" class="active">Contact Us</a>
+                </div>
+            </nav>
+
         </div>
-    </body>
-</html>
+    </header>
 
+    <div class="section" id="contact">
+        <h2>Contact Us</h2>
+        <p>Do you have any comments, enquiries, and/or questions? <br> We'd love to hear from you!</p>
+        <div>
+            <form id="contact-form" action="">
+                <label for="fname">First Name</label><br>
+                <input type="text" id="fname" name="firstname" placeholder="Eg. John"><br>
+
+                <label for="lname">Last Name</label><br>
+                <input type="text" id="lname" name="lastname" placeholder="Eg. Smith"><br>
+
+                <label for="email">Email</label><br>
+                <input type="text" id="email" name="email" placeholder="Eg. johnsmith@gmail.com"><br>
+
+                <label for="questions"></label>Questions and Comments<br>
+                <textarea id="subject" name="questions" placeholder="What would you like to ask us?" style="height:200px"></textarea><br>
+
+                <input type="submit" onclick="submitInfo()" value="Submit">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
