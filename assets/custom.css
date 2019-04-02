@@ -6,6 +6,10 @@ body {
     color: #505561;
 }
 
+body a {
+    color: #505561;
+}
+
 img {
     border-radius: 15px;
     border-style: solid;
@@ -19,18 +23,13 @@ img {
 
 .section-header {
     width: 100%;
-    padding-top: 45px;
+    padding-top: 20px;
     padding-bottom: 20px;
 }
 
 .text-center {
     text-align: center
 }
-
-.dark {
-    background-color: #A5ADBA
-}
-
 input[type=text],
 select,
 textarea {
@@ -57,16 +56,37 @@ input[type=submit]:hover {
     background-color: #6F9FD8;
 }
 
+
+.body-section {
+    margin-bottom: 30px;
+}
+
 .container {
     border-radius: 5px;
     background-color: #f2f2f2;
-    padding: 20px;
-    margin-bottom: 20px;
+    padding: 10px;
+    margin-bottom: 10px;
+    padding: 2px 16px;
+}
+
+.container .dark {
+    background-color: #A5ADBA
+}
+.dark {
+    background-color: #A5ADBA
 }
 
 .app-title {
     font-weight: bold;
     font-family: "Nunito", "sans-serif";
+}
+
+.app-title a {
+    text-decoration: none;
+}
+
+.app-title a:hover {
+    text-decoration: underline;
 }
 
 #intro {
@@ -92,7 +112,7 @@ input[type=submit]:hover {
     justify-content: center;
     background-size: cover;
     margin: 0px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     padding: 0px;
     font-family: 'Nunito', monospace;
 }
@@ -280,9 +300,6 @@ input[type=submit]:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-.container {
-    padding: 2px 16px;
-}
 
 .cards {
     display: inline-block;
