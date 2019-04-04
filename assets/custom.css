@@ -122,7 +122,7 @@ input[type=submit]:hover {
 
 #splash {
     height: 100vh;
-    background-image: url(whitebg.jpg);
+    background-image: url(bluesplash.svg);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -132,6 +132,14 @@ input[type=submit]:hover {
     margin-bottom: 20px;
     padding: 0px;
     font-family: 'Nunito', monospace;
+}
+
+.splash-light {
+    color: #b4b9c1;
+}
+
+.splash-dim {
+    color: #9ca0a8;
 }
 
 #down {
@@ -180,6 +188,14 @@ input[type=submit]:hover {
     width: auto;
     font-size: 26px;
     font-weight: 700;
+}
+
+#site-logo-obj {
+    display: block;
+    /*height: auto;*/
+    width: 150px;
+    padding-top: -5px;
+    margin-right: 15px;
 }
 
 #site-header .menu-icon {
