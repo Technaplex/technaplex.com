@@ -20,6 +20,9 @@ body a {
 
 .section {
     z-index: 1;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-block-end: 20px;
 }
 
 .intro {
@@ -44,6 +47,14 @@ body a {
 
 .text-center {
     text-align: center
+}
+
+.text-right {
+    text-align: right
+}
+
+.text-left {
+    text-align: left
 }
 
 input[type=text],
@@ -341,3 +352,4 @@ input[type=submit]:hover {
 .card-spacer {
     margin-left: 15px;
 }
+
