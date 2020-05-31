@@ -60,7 +60,8 @@
         <h2>Contact Us</h2>
         <p>Do you have any comments, enquiries, and/or questions? <br> We'd love to hear from you!</p>
         <div>
-            <form id="contact-form" action="">
+            <form id="contact-form" action="https://formspree.io/mbjzoryk" method="POST">
+
                 <label for="fname">First Name</label><br>
                 <input type="text" id="fname" name="firstname" placeholder="Eg. John"><br>
 
@@ -71,7 +72,7 @@
                 <input type="text" id="email" name="email" placeholder="Eg. johnsmith@gmail.com"><br>
 
                 <label for="questions"></label>Questions and Comments<br>
-                <textarea id="subject" name="questions" placeholder="What would you like to ask us?" style="height:200px"></textarea><br>
+                <textarea id="questions" name="questions" placeholder="What would you like to ask us?" style="height:200px"></textarea><br>
 
                 <input type="submit" onclick="submitInfo()" value="Submit">
             </form>
